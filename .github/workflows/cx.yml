@@ -11,13 +11,15 @@ jobs:
      - name: Checkout
        uses: actions/checkout@v2
      - name: Checkmarx AST CLI Action
-       uses: Checkmarx/ast-github-action@2.0.3
+       uses: checkmarx/ast-github-action@main #Github Action version
        with:
          project_name: ${{ github.repository }}
          cx_tenant: nfr_trustdimension
          base_uri: https://ast.checkmarx.net
          cx_client_id: ${{ secrets.CLIENT_ID }}
-         cx_client_secret: ${{ secrets.CX_CLIENT_SECRET }}
+         cx_client_secret: ${{ secrets.SECRET }}
          branch: ${{ github.ref }}
-         additional_params: 
-          --threshold "sast-high=10;kics-high=1;sca-high=1;api-high=1"
+         additional_params:
+          --threshold "sast-high=100; sast-medium=100; sca-high=100"
+          --project-tags tag1,tag2,tag3
+          --tags tag
