@@ -23,7 +23,7 @@ jobs:
          cx_client_id: ${{ secrets.CLIENT_ID }}
          cx_client_secret: ${{ secrets.SECRET }}
          #branch: ${{ github.ref }}
-         branch: ${{ github.refs/heads/}}
+         branch: ${{ github.refs/pull/*}}
          additional_params:
           --threshold "sast-critical=1; sast-high=100; sast-medium=100; sca-critical=1; sca-high=100;iac-security-medium=1"
           --project-tags tag1,tag2,tag3
