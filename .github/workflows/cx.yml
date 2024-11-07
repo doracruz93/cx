@@ -18,7 +18,8 @@ jobs:
          base_uri: https://ast.checkmarx.net
          cx_client_id: ${{ secrets.CLIENT_ID }}
          cx_client_secret: ${{ secrets.SECRET }}
-         branch: ${{ github.ref }}
+         #branch: ${{ github.ref }}
+         branch: ${{ github.ref#refs/heads/}}
          additional_params:
           --threshold "sast-high=100; sast-medium=100; sca-high=100"
           --project-tags tag1,tag2,tag3
