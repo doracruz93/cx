@@ -6,6 +6,8 @@ on:
      - develop1
      - develop2
      - master
+     - master1
+     - master2
 jobs:
   build:
     runs-on: ubuntu-latest
