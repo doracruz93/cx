@@ -254,7 +254,7 @@ innerHTML=location.hash>#<script>alert(1)</script>
 <address onbeforecut="alert(1)" contenteditable>test</address>
 <address onbeforepaste="alert(1)" contenteditable>test</address>
 <address onblur=alert(1) tabindex=1 id=x></address><input autofocus>
-<address onclick="alert(1)">test</address>
+<address onclick="alert(1)">test2</address>
 <address oncontextmenu="alert(1)">test</address>
 <address oncopy="alert(1)" contenteditable>test</address>
 <address oncut="alert(1)" contenteditable>test</address>
