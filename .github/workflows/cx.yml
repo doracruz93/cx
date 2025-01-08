@@ -30,3 +30,6 @@ jobs:
           --threshold "sast-critical=1; sast-high=100; sast-medium=100; sca-critical=1; sca-high=100;iac-security-medium=1"
           --project-tags tag1,tag2,tag3
           --tags tag
+          --timeout 10000 
+          --scan-timeout 10000
+
