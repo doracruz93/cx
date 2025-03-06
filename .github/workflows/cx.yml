@@ -32,5 +32,4 @@ jobs:
           --tags tag
           --timeout 10000 
           --scan-timeout 10000
-          --sast-filter !*.devcontainer
-
+      
